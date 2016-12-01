@@ -1,4 +1,10 @@
 /* -- HEADER -- */
+body{
+    background-color:lightblue;
+}
+div.myGrid{
+    background-color:snow;
+}
 
 .navbar{
     margin-bottom: 0;
