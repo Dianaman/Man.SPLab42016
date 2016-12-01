@@ -39,11 +39,13 @@
 	<script src="js/controladores/controlAltaUsuarios.js"></script>
 	<script src="js/controladores/controlModificarUsuarios.js"></script>
 	<script src="js/controladores/controlGrillaUsuarios.js"></script>
+	<script src="js/controladores/controlDirectivas.js"></script>
 	<script src="js/servicios/filtros.js"></script>
 	<script src="js/servicios/serviciosProductos.js"></script>
 	<script src="js/servicios/serviciosUsuarios.js"></script>
 	<script src="js/factories/factoryUsuario.js"></script>
 	<script src="js/factories/factoryRutas.js"></script>
+	<script src="js/directives/directivas.js"></script>
 	<!--El service siempre lo llamamos despues de los controllers y en el angular.module del mismo no hay que agregar []-->
 
 	
@@ -75,6 +77,8 @@
 	                        <li ng-show="userActual.tipo == 'vendedor' || userActual.tipo == 'administrador'"><a href="#/altaProductos">Alta de Productos</a></li>
 	                        <li ng-show="userActual.tipo == 'administrador'"><a href="#/grillaUsuarios">Grilla Usuarios</a></li>
 	                        <li ng-show="userActual.tipo == 'administrador'"><a href="#/altaUsuarios">Alta de Usuarios</a></li>
+							<li ng-show="userActual.tipo == 'administrador'"><a href="#/directivaUsuarios">Directiva Usuarios</a></li>
+	                        <li ng-show="userActual.tipo == 'administrador'"><a href="#/directivaProductos">Directiva Productos</a></li>
 	                    </ul>
 	                    
 	                    <!--<form action="" class="navbar-form navbar-right" role="search">

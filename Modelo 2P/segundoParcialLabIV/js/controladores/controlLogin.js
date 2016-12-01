@@ -4,9 +4,9 @@ angular.module('app.controllers', [])
 
 	$scope.usuario = {};
 
-	$scope.usuario.nombre = "nombreComprador";
-	$scope.usuario.correo = "comprador@comprador.com";
-	$scope.usuario.clave = "1234";
+	$scope.usuario.nombre = "comprador";
+	$scope.usuario.correo = "comp@comp.com";
+	$scope.usuario.clave = "123";
 
 
 	if ($auth.isAuthenticated()){

@@ -7,7 +7,10 @@ angular.module('app.controllers')
 	$scope.producto = {};
 
 	$scope.Guardar = function(){
-
+		if($scope.producto.porcentaje < 1 || $scope.producto.porcentaje > 100){
+			alert('El porcentaje debe ir de 1 a 100');
+			return;
+		}
 		var producto = JSON.stringify($scope.producto);
 
 		console.info("producto", $scope.producto);

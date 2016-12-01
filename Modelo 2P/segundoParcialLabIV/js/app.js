@@ -10,8 +10,8 @@ angular.module('app', ['app.controllers', 'ui.router', 'ui.grid', 'ui.grid.pagin
 
 
 .config(function ($stateProvider, $urlRouterProvider, $authProvider){
-
-	$authProvider.loginUrl ="2parciallab/Modelo%202P/segundoParcialLabIV/ws1/servidor/jwt/php/auth.php";
+	
+	$authProvider.loginUrl ="labo42p/Modelo%202P/segundoParcialLabIV/ws1/servidor/jwt/php/auth.php";
 	$authProvider.tokenName = "segundoparcial";
 	$authProvider.tokenPrefix="Aplicacion";
 	$authProvider.authHeader="data";
@@ -88,6 +88,17 @@ angular.module('app', ['app.controllers', 'ui.router', 'ui.grid', 'ui.grid.pagin
 			url:"/grillaUsuarios",
 			templateUrl: "grillaUsuarios.html",
 			controller:"grillaUsuariosCtrl"
+		})
+		.state("directivaUsuarios", {
+			url:"/directivaUsuarios",
+			templateUrl: "directivaUsuarios.html",
+			controller:"directivasCtrl"
+		})
+
+		.state("directivaProductos", {
+			url:"/directivaProductos",
+			templateUrl: "directivaProductos.html",
+			controller:"directivasCtrl"
 		})
 
 	$urlRouterProvider.otherwise("/grillaUsuarios");

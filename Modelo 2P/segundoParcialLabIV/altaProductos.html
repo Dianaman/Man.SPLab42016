@@ -14,7 +14,7 @@
 
 
           <br><label for="precio">Porcentaje:
-          <input type="number" id="porcentaje" name="porcentaje" ng-model="producto.porcentaje" placeholder="ingrese porcentaje" value="" required />
+          <input type="number" id="porcentaje" name="porcentaje" ng-model="producto.porcentaje" min="1" max="100" placeholder="ingrese porcentaje" value="" required />
           <span id="lblPrecio" style="color:#FF0000;float:right;font-size:18" ng-show='FormIngreso.precio.$error.required'>* El precio es requerido</span></label>
         </fieldset>
 

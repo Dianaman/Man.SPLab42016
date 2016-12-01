@@ -62,6 +62,7 @@ angular.module('app.controllers')
     		console.info("todos los usuarios", respuesta);
 
     		$scope.gridOptions.data = respuesta.data;
+        $scope.usuarios = respuesta.data;
 
     	}).catch(function (error){
 
